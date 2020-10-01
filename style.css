@@ -1,0 +1,48 @@
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(75, 75, 204);
+
+}
+input[type=number] {
+    border: solid rgb(75, 75, 204) 2px;
+    border-radius: 10px;
+    width: 130px;
+    font-size: 16px;
+}
+input[type=value] {
+    border: solid rgb(75, 75, 204) 2px;
+    border-radius: 10px;
+    width: 130px;
+    font-size: 16px;
+}
+input[type=text] {
+    border: solid rgb(75, 75, 204) 2px;
+    border-radius: 10px;
+    width: 130px;
+    font-size: 16px;
+}
+.canvas {
+    width: 600px;
+    height: 600px;
+    background-color: beige;
+    color: rgb(75, 75, 204);
+    border: dashed rgb(75, 75, 204) 2px;
+    border-radius: 10px;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(75, 75, 204);
+    font-size: 20px;
+}
+.aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidepanel {
+    display: flex;
+    justify-content: flex-end;
+}

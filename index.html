@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape up or shape out</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container p-2">
+        <section class="form">
+            <form>
+                <!-- for Rectangle -->
+                <label for="rectangle">Rectangle</label><br>
+                <input type="number" id="rectangle-height" placeholder="height(px)"><br>
+                <input type="number" id="rectangle-width" placeholder="width(px)"><br>
+                <input class="btn btn-primary m-2" id="rectangle-button" type="button" value="Insert">
+                <br><br>
+                <!-- for Square -->
+                <label for="square">Square</label><br>
+                <input type="number" id="square-sidelength" placeholder="length(px)"><br>
+                <input class="btn btn-primary m-2" id="square-button" type="button" value="Insert">
+                <br><br>
+                <!-- for Circle -->
+                <label for="circle">Circle</label><br>
+                <input type="number" id="circle-radius" placeholder="radius(px)"><br>
+                <input class="btn btn-primary m-2" id="circle-button" type="button" value="Insert">
+                <br><br>
+                <!-- for Triangle -->
+                <label for="triangle">Triangle</label><br>
+                <input type="number" id="triangle-base" placeholder="height(px)"><br>
+                <input class="btn btn-primary m-2" id="triangle-button" type="button" value="Insert">
+                <br><br>
+
+            </form>
+
+
+        </section>
+
+        <aside class="aside">
+            <div class="canvas mr-2" id="canvas">
+
+            </div>
+            <div class="sidepanel">
+                <form>
+                    <label for="Shape Name">Shape Name</label>
+                    <input type="text"><br>
+                    <label class="width"for="Width">Width</label>
+                    <input type="value"><br>
+                    <label class="height"for="Height">Height</label>
+                    <input type="value"><br>
+                    <label class="radius"for="Radius">Radius</label>
+                    <input type="value"><br>
+                    <label class="area"for="Area">Area</label>
+                    <input type="value"><br>
+                    <label class="perimeter"for="Perimeter">Perimeter</label>
+                    <input type="value">
+                </form>
+            </div>
+
+        </aside>
+
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
