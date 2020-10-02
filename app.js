@@ -48,7 +48,7 @@ class Shape {
     randomVal(min, max) {
         return Math.floor(Math.random() * (max - min));
     }
-    undescribe(){
+    undescribe() {
         widthWidth.value = '';
         heightHeight.value = '';
         radiusRadius.value = '';
@@ -151,39 +151,44 @@ class Circle extends Shape {
 
 // rectangle button click
 rectangleBtn.addEventListener('click', () => {
-    new Rectangle(rectangleHeight.value, rectangleWidth.value);
     if (rectangleHeight.value > 600 || rectangleWidth.value > 600) {
-        alert ('Too many pixels, dumby!');
-        window.location.reload();
+        alert('No more than 600 pixels are allowed');
+        rectangleHeight.value = '';
+        rectangleWidth.value = '';
+        return;
     }
+    new Rectangle(rectangleHeight.value, rectangleWidth.value);
     rectangleHeight.value = '';
     rectangleWidth.value = '';
 });
 
 // square button click
 squareBtn.addEventListener('click', () => {
-    new Square(squareSideLength.value, squareSideLength.value);
     if (squareSideLength.value > 600) {
-        alert ('Too many pixels, dumby!');
-        window.location.reload();
+        alert('No more than 600 pixels are allowed');
+        squareSideLength.value = '';
+        return;
     }
+    new Square(squareSideLength.value, squareSideLength.value);
     squareSideLength.value = '';
 });
 // circle button click
 circleBtn.addEventListener('click', () => {
-    new Circle(circleRadius.value);
     if (circleRadius.value > 300) {
-        alert ('Too many pixels, dumby!');
-        window.location.reload();
-    }
+        alert('No more than 300 pixels are allowed');
+        circleRadius.value = '';
+        return;
+    };
+    new Circle(circleRadius.value);
     circleRadius.value = '';
 });
 // triangle button click
 triangleBtn.addEventListener('click', () => {
-    new Triangle(triangleBase.value);
     if (triangleBase.value > 600) {
-        alert ('Too many pixels, dumby!');
-        window.location.reload();
-    }
+        alert('No more than 600 pixels are allowed');
+        triangleBase.value = '';
+        return;
+    };
+    new Triangle(triangleBase.value);
     triangleBase.value = '';
 });
