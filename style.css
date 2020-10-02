@@ -23,6 +23,7 @@ input[type=text] {
     font-size: 16px;
 }
 .canvas {
+    position: relative;
     width: 600px;
     height: 600px;
     background-color: beige;
@@ -33,7 +34,6 @@ input[type=text] {
 main {
     display: flex;
     justify-content: space-around;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(75, 75, 204);
     font-size: 20px;
 }
@@ -44,5 +44,4 @@ main {
 }
 .sidepanel {
     display: flex;
-    justify-content: flex-end;
 }
